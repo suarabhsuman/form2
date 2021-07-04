@@ -1,0 +1,299 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="index.css">
+
+<style>
+
+* {
+    box-sizing: border-box;
+    outline: none;
+    }
+    
+    body{
+        font-family: 'Josefin Sans', sans-serif;
+        margin: 20px 15px;
+        font-size: 15px;
+        padding: 10px;
+        font-weight: 400;
+        height: 100vh;
+        text-align: center;
+    }
+    
+    
+    .container {
+        background-color: rgb(235, 242, 245);
+        padding: 5px 20px 10px 20px;
+        /*border-radius: 2px solid rgb(41, 40, 40);*/
+        border-radius: 5px;
+
+        display: inline-block;
+        box-shadow:3px 3px 5px 6px #ccc;  
+    }
+    input[type="text"],input[type="textarea"],input[type="email"],input[type="number"],input[type="button"],textarea,select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid beige;
+    border-radius: 5px;
+    margin: 5px;
+    
+    
+    }
+    fieldset{
+        background-color: rgb(235, 242, 245);
+        border: 1px solid rgb(32, 32, 31);
+       /* width: 50vw;
+        padding: 12px;*/
+        border: 1px solid beige;
+        border-radius: 5px;
+        margin: 5px;
+        
+    }
+    .main_heading{
+        text-align: center;
+        font-size: 25px;
+    }
+    input[type="button"]{
+    background-color: rgb(46, 231, 46);
+    border: none;
+    font-weight: 500;
+    border-radius: 3px;
+    width: 100%;
+    align-items: center;
+    color: rgb(12, 12, 12);
+    cursor: pointer;
+    }
+    input[type="button"]:hover{
+        background-color: rgb(235, 157, 93);
+        font-weight: bolder;
+    }
+
+    input[type="checkbox"]{
+        border: 2px;
+        align-items: left;
+        
+    
+
+    }
+    div.class{
+        color: #ccc;
+        width: 5px;
+        height: auto;
+        align-items: left;
+    }
+    label{
+        
+        font-size: smaller;
+        color: white;
+        cursor: pointer;
+        border-radius: 5px;
+        line-height: 0.1;
+/* padding: 8px 5px 5px 8px; */
+        padding:4px 1px 0px 2px ;
+        
+        height: 8px;
+        width: 20%;
+        margin: 10px;
+        background-color: rgb(136, 136, 139);
+        
+    }
+
+
+
+</style>
+
+</head>
+<body>
+    <div class="container">
+<form action="" method="get">
+<h1 class="main_heading">
+    Extra Information
+</h1>
+
+<p>  <input type="number" name="Distance" placeholder="Distance from road (meter)" required>
+</p>
+
+
+<p>  <input type="textarea" name="" placeholder="Short Description(Optional)">
+</p>
+<p>
+    <fieldset>
+        <legend>
+            Your property suitable for (required)
+        </legend>
+    <label for="check1" class="check-btn">
+<input type="checkbox" id="check1">Shop
+    </label>
+     <label for="check2" class="check-btn">
+        <input type="checkbox" id="check2">Showroom
+            </label>
+            <label for="check3" class="check-btn">
+                <input type="checkbox" id="check3">Warehouse
+                    </label>
+                    <label for="check4" class="check-btn">
+                        <input type="checkbox" id="check4">Coaching Center
+                            </label>
+                            <label for="check5" class="check-btn">
+                                <input type="checkbox" id="check5">Office
+                                    </label>
+</fieldset>
+
+
+<fieldset>
+    <legend>
+       Availablity Status (required)
+    </legend>
+    <label for="check6" class="check-btn">
+        <input type="checkbox" id="check6">Immediately Available
+            </label>
+
+            <input type="date" name="date" placeholder="select date">
+</fieldset>
+
+
+
+<fieldset>
+    <legend>
+      Furnishing Status (required)
+    </legend>
+    <label for="check7" class="check-btn">
+        <input type="checkbox" id="check7">Furnished
+            </label>
+            <label for="check8" class="check-btn">
+                <input type="checkbox" id="check8">Semi Furnished
+                    </label>
+                    <label for="check9" class="check-btn">
+                        <input type="checkbox" id="check9">Unfurnished
+                            </label>
+
+</fieldset>
+
+<fieldset>
+    <legend>
+      Floor Status (required)
+    </legend>
+<select>
+    
+    <option>
+        1st
+    </option>
+    <option>
+        2nd
+    </option>
+    <option>
+        3rd
+    </option>
+    <option>
+        4th
+    </option>
+    <option>
+        5th
+    </option>
+</select>
+</fieldset>
+
+<fieldset>
+    <legend>
+      Amenities (required)
+    </legend>
+    <p><label for="check10" class="check-btn">
+            <input type="checkbox" id="check10">Parking
+                </label>
+                <label for="check11" class="check-btn">
+                    <input type="checkbox" id="check11">Power backup
+                        </label></p>
+    <p><label for="check12" class="check-btn">
+            <input type="checkbox" id="check12">Wifi
+                </label>
+                    <label for="check14" class="check-btn">
+                        <input type="checkbox" id="check14">Security/cctv
+                            </label>
+    </p> 
+    <p>
+        <label for="check13" class="check-btn">
+            <input type="checkbox" id="check13">Lift
+                </label>
+                        <label for="check15" class="check-btn">
+                        <input type="checkbox" id="check15">RO Water System
+                            </label>
+    </p> 
+
+    <p>
+        
+        <p><label for="check17" class="check-btn">
+                <input type="checkbox" id="check17">Fire Extinguisher
+                    </label>
+                        <label for="check18" class="check-btn">
+                            <input type="checkbox" id="check18">Garden
+                                </label>
+    </p> 
+                
+    <p> <label for="check16" class="check-btn">
+            <input type="checkbox" id="check16">Water disposal
+            </label>
+                <label for="check19" class="check-btn">
+                    <input type="checkbox" id="check19">Near the Road
+                        </label>
+    </p>                                                               
+        
+                                                                                
+</fieldset>
+
+
+
+<!--<fieldset>
+    <legend>
+        Your property suitable for (required)
+    </legend>
+    <label for="checkbox" class="check">jdk
+    <input type="checkbox" name="Total" id="" value=""> kkdla</div>
+    </label>
+</fieldset>-->
+
+
+
+<!--<br>
+<h1 class="main_heading">
+    Payment Information
+</h1>
+
+
+<p>
+    Card number:* <input type="number" name="card-number" placeholder="1234-2345-2345-2345" required>
+</p>
+
+<p>
+    Expiration Date:* <input type="date" name="expiry" >
+
+</p>
+
+<p>
+    Cvv:* <input type="number" placeholder="124" name="cvv">
+
+</p>-->
+
+<p>
+    <input type="button" value="Submit" name="">
+</p>
+
+
+
+
+
+
+</form>
+
+
+    </div>
+
+
+</body>
+</html>
